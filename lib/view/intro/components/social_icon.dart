@@ -36,11 +36,6 @@ class _SocialMediaIconState extends State<SocialMediaIcon> {
           child: Container(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: isHovered
-                  ? LinearGradient(
-                      colors: [Colors.blueAccent, Colors.white],
-                    )
-                  : null,
               boxShadow: isHovered
                   ? [
                       BoxShadow(
@@ -49,7 +44,7 @@ class _SocialMediaIconState extends State<SocialMediaIcon> {
                         blurRadius: 50,
                       ),
                       BoxShadow(
-                        color: Colors.white.withOpacity(0.5),
+                        color: Colors.blueAccent.withOpacity(0.5),
                         offset: const Offset(-1, -1),
                         blurRadius: 50,
                       ),

@@ -10,6 +10,7 @@ class SocialMediaIconList extends StatelessWidget {
     return TweenAnimationBuilder(tween: Tween(begin: 0.0,end: 1.0), duration: const Duration(milliseconds: 200), builder: (context, value, child) {
       return Transform.scale(scale: value,
       child:  Column(
+
         children: [
           Text(
           "Follow me",

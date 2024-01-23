@@ -25,7 +25,9 @@ class SocialMediaIconColumn extends StatelessWidget {
           const SizedBox(width: 20), // Add space between icons
           const SocialMediaIcon(icon: 'assets/icons/github.svg'),
           const SizedBox(width: 20),
-           const SocialMediaIcon(icon: 'assets/icons/upwork.png'), // Add space between icons
+           const SocialMediaIcon(icon: 'assets/icons/upwork.svg'), 
+             const SizedBox(width: 20),
+           const SocialMediaIcon(icon: 'assets/icons/gmail.svg'), // Add space between icons
         ],
       ),
     );

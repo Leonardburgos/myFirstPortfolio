@@ -44,7 +44,7 @@ class IntroBody extends StatelessWidget {
               const Responsive(
                   desktop: MyPortfolioText(start: 40, end: 50),
                   largeMobile: MyPortfolioText(start: 40, end: 35),
-                  mobile: MyPortfolioText(start: 35, end: 30),
+                  mobile: MyPortfolioText(start: 45, end: 30),
                   tablet: MyPortfolioText(start: 50, end: 40)),
               if (kIsWeb && Responsive.isLargeMobile(context))
                 Container(
@@ -56,17 +56,23 @@ class IntroBody extends StatelessWidget {
               const Responsive(
                 desktop: AnimatedDescriptionText(start: 14, end: 15),
                 largeMobile: AnimatedDescriptionText(start: 14, end: 12),
-                mobile: AnimatedDescriptionText(start: 14, end: 12),
+                mobile: AnimatedDescriptionText(start: 25, end: 12),
                 tablet: AnimatedDescriptionText(start: 17, end: 14),
               ),
               const SizedBox(
                 height: defaultPadding * 2,
               ),
-              const DownloadButton(),
-              const SizedBox(
-                height: 50,
-              ),
-              const SocialMediaIconList(),
+              const Center(
+                child: Column(
+                  children: [
+                    const DownloadButton(),
+                    const SizedBox(
+                      height: 50,
+                    ),
+                    const SocialMediaIconList(),
+                  ],
+                ),
+              )
             ],
           ),
         ),

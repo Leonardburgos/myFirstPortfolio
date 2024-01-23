@@ -71,6 +71,7 @@ flutter:
     - assets/logo.png
     - assets/me.png
     - assets/photome.jpg
+    - assets/icons/facebook1.svg
     - assets/icons/facebook.svg
     - assets/icons/gitlab.svg
     - assets/icons/github.svg
@@ -79,6 +80,7 @@ flutter:
     - assets/icons/dart.png
     - assets/icons/firebase.png
     - assets/icons/upwork.svg
+    - assets/icons/gmail.svg
  
   # To add assets to your application, add an assets section, like this:
   # assets:
