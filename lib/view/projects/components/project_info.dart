@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:leonard_portfolio/view/projects/components/project_deatail.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
 import '../../../view model/getx_controllers/projects_controller.dart';
@@ -18,7 +19,7 @@ class ProjectStack extends StatelessWidget {
         controller.onHover(index, value);
       },
       onTap: () {
-        ImageViewer(context,projectList[index].image);
+        launchUrl(Uri.parse(projectList[index].link));
       },
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
