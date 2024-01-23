@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:leonard_portfolio/view%20model/responsive.dart';
 import 'package:leonard_portfolio/view/intro/components/intro_body.dart';
 
-import 'package:leonard_portfolio/view/intro/components/social_media_list.dart';
-
 class Introduction extends StatelessWidget {
   const Introduction({super.key});
   @override
