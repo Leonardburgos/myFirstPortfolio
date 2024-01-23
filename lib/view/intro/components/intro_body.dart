@@ -62,14 +62,14 @@ class IntroBody extends StatelessWidget {
               const SizedBox(
                 height: defaultPadding * 2,
               ),
-              const Center(
+              Center(
                 child: Column(
                   children: [
-                    const DownloadButton(),
-                    const SizedBox(
+                    DownloadButton(),
+                    SizedBox(
                       height: 50,
                     ),
-                    const SocialMediaIconList(),
+                    if (Responsive.isDesktop(context)) const SocialMediaIconList(),
                   ],
                 ),
               )

@@ -13,21 +13,33 @@ class SocialMediaIconColumn extends StatelessWidget {
         children: [
           SocialMediaIcon(
             icon: 'assets/icons/facebook.svg',
-            onTap: () => launchUrl(Uri.parse('https://www.linkedin.com/in/hamad-anwar/')),
+            onTap: () => launchUrl(
+                Uri.parse('https://www.facebook.com/johnleonard.burgos/')),
           ),
           const SizedBox(width: 20), // Add space between icons
           SocialMediaIcon(
             icon: 'assets/icons/twitter.svg',
-            onTap: () => launchUrl(Uri.parse('https://github.com/Hamad-Anwar')),
+            onTap: () =>
+                launchUrl(Uri.parse('https://twitter.com/haipotetodesu')),
           ),
           const SizedBox(width: 20), // Add space between icons
-          const SocialMediaIcon(icon: 'assets/icons/gitlab.svg'),
+          SocialMediaIcon(
+            icon: 'assets/icons/gitlab.svg',
+            onTap: () =>
+                launchUrl(Uri.parse('https://gitlab.com/john.burgos')),
+          ),
           const SizedBox(width: 20), // Add space between icons
-          const SocialMediaIcon(icon: 'assets/icons/github.svg'),
+          SocialMediaIcon(
+            icon: 'assets/icons/github.svg',
+            onTap: () =>
+                launchUrl(Uri.parse('https://github.com/Leonardburgos')),
+          ),
           const SizedBox(width: 20),
-           const SocialMediaIcon(icon: 'assets/icons/upwork.svg'), 
-             const SizedBox(width: 20),
-           const SocialMediaIcon(icon: 'assets/icons/gmail.svg'), // Add space between icons
+          SocialMediaIcon(
+            icon: 'assets/icons/gmail.svg',
+            onTap: () =>
+                launchUrl(Uri.parse('mailto:burgosjohnleonard@gmail.com')),
+          ), // Add space between icons
         ],
       ),
     );
